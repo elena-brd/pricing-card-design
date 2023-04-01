@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #292929;
+}
+
+h1 {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+}
+
+.col {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    border: 2px solid #ddd;
+    background: #fff;
+}
+
+
+.card li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.card i {
+    color: #480ca8;
+    padding-right: 8px;
+}
+
+.card .header {
+    background: #0fa3b1;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.card .main-header {
+    background: #ff9f1c;
+}
+
+.card:hover,
+.card.focus-card {
+    box-shadow: 1px 5px 10px -1px rgba(0, 0, 0, 0.75);
+}
+
+.main-price {
+    background: #ddd;
+    font-size: 19px;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: #b5e2fa;
+    color: #480ca8;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+    background: #0fa3b1;
+    color: #fff;
+}
+
+@media(max-width: 780px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
